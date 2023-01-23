@@ -7,8 +7,8 @@
             android:endColor="#162676"
             android:angle="270"/>
         <corners
-            android:bottomRightRadius="40dp"
-            android:bottomLeftRadius="40dp"/>
+            android:bottomRightRadius="25dp"
+            android:bottomLeftRadius="25dp"/>
 
     </shape>
 </item>
