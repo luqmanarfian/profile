@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:background="#00A7DB"
-                        android:text="Felda Corporation "
+                        android:text="Bullion Ecosystem International "
                         android:textColor="#FFFF"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -75,7 +75,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/profile" />
+                        app:srcCompat="@drawable/about_us" />
 
                     <HorizontalScrollView
                         android:id="@+id/linearLayout"
@@ -337,9 +337,10 @@
                             <HorizontalScrollView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                tools:layout_editor_absoluteY="16dp">
+                                app:layout_constraintTop_toTopOf="parent">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -436,9 +437,12 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
                         android:background="@drawable/white_background2"
                         android:elevation="5dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -475,14 +479,14 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:id="@+id/constraintLayout6"
                                 android:layout_width="180dp"
-                                android:layout_height="180dp"
+                                android:layout_height="105dp"
                                 android:layout_marginStart="8dp"
                                 app:layout_constraintStart_toStartOf="parent">
 
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="170dp"
-                                    android:layout_height="150dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
                                     android:text="Bullion Ecosystem sebagai penyedia Teknologi Ekosistem Terintegrasi, membangun sistem pengelolaan investasi yang semakin baik, transparan, terpisah dan dapat terintegrasi dengan sistem terstruktur yang dapat......"
                                     android:textColor="#000000"
@@ -500,6 +504,194 @@
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/about_us" />
 
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/white_background"
+                        android:elevation="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Team"
+                                android:textColor="#2e74b2"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout8"
+                                android:layout_width="100dp"
+                                android:layout_height="141dp"
+                                android:background="@drawable/grey_background"
+                                android:elevation="2dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout9"
+                                    android:layout_width="106dp"
+                                    android:layout_height="110dp"
+                                    tools:layout_editor_absoluteY="3dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/profil_cowo"
+                                        tools:layout_editor_absoluteX="0dp"
+                                        tools:layout_editor_absoluteY="0dp" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10sp"
+                                    android:text="Anonymous"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="141dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/grey_background"
+                                android:elevation="2dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/constraintLayout8">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout10"
+                                    android:layout_width="106dp"
+                                    android:layout_height="110dp"
+                                    tools:layout_editor_absoluteY="3dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/profil_cowo"
+                                        tools:layout_editor_absoluteX="0dp"
+                                        tools:layout_editor_absoluteY="0dp" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10sp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Anonymous"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.517"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="141dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/grey_background"
+                                android:elevation="2dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/constraintLayout8">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout11"
+                                    android:layout_width="106dp"
+                                    android:layout_height="110dp"
+                                    tools:layout_editor_absoluteY="3dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/profil_cowo"
+                                        tools:layout_editor_absoluteX="0dp"
+                                        tools:layout_editor_absoluteY="0dp" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10sp"
+                                    android:text="Anonymous"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout11" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/blue_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE"
+                                android:textColor="#FFFFFF"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
