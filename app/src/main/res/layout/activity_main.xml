@@ -38,43 +38,32 @@
                         android:background="@drawable/top_background"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:scaleType="centerCrop"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circles" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="#00A7DB"
+                        android:layout_marginTop="16dp"
+                        android:background="#2E74B2"
                         android:text="Bullion Ecosystem International "
                         android:textColor="#FFFF"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView"
-                        app:layout_constraintStart_toStartOf="@+id/imageView"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_marginTop="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="109dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="12dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/about_us" />
+                        app:srcCompat="@drawable/logo_bei_2" />
 
                     <HorizontalScrollView
                         android:id="@+id/linearLayout"
@@ -314,7 +303,9 @@
                             android:id="@+id/constraintLayout4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            app:layout_constraintBottom_toTopOf="@+id/constraintLayout12"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -322,35 +313,14 @@
                                 android:id="@+id/tv_news"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="News"
-                                android:textColor="#2e74b2"
+                                android:layout_marginTop="16dp"
+                                android:text="Update News"
+                                android:textColor="#2E74B2"
                                 android:textSize="24sp"
                                 android:textStyle="bold"
-                                app:layout_constraintTop_toTopOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="80dp"
-                            android:layout_height="30dp"
-                            android:layout_marginRight="30dp"
-                            android:background="@drawable/light_blue"
-                            app:layout_constraintBottom_toTopOf="@+id/constraintLayout12"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <TextView
-                                android:id="@+id/tv_moreNews"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="MORE"
-                                android:textColor="#ffffff"
-                                android:textSize="20sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
-
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -376,7 +346,9 @@
                                     <androidx.constraintlayout.widget.ConstraintLayout
                                         android:layout_width="345dp"
                                         android:layout_height="wrap_content"
-                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
                                         android:background="@drawable/white_background"
                                         android:elevation="5dp">
 
@@ -575,7 +547,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
-                                android:id="@+id/constraintLayout8"
+                                android:id="@+id/L_profile1"
                                 android:layout_width="94dp"
                                 android:layout_height="135dp"
                                 android:layout_marginLeft="14dp"
@@ -620,7 +592,7 @@
                                 android:background="@drawable/grey_background"
                                 android:elevation="2dp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="@+id/constraintLayout8">
+                                app:layout_constraintStart_toStartOf="@+id/L_profile1">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
                                     android:id="@+id/constraintLayout10"
@@ -662,7 +634,7 @@
                                 android:background="@drawable/grey_background"
                                 android:elevation="2dp"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="@+id/constraintLayout8">
+                                app:layout_constraintStart_toStartOf="@+id/L_profile1">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
                                     android:id="@+id/constraintLayout11"
