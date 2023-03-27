@@ -41,7 +41,7 @@
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/tv_bullion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
@@ -54,6 +54,16 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-Bullion Ecosystem International-"
+                        android:background="#2E74B2"
+                        android:textColor="#ffffff"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_bullion" />
 
                     <ImageView
                         android:id="@+id/imageView"
@@ -68,7 +78,7 @@
                     <HorizontalScrollView
                         android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="89dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginBottom="24dp"
                         android:background="@drawable/white_background"
@@ -77,40 +87,38 @@
                         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
-                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_bullion"
                         tools:ignore="MissingConstraints">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="89dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
                                 android:id="@+id/btnBukaShop"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="8dp"
                                 android:onClick="pindahMenu1"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/grey_background"
-                                android:elevation="5dp"
                                 android:orientation="vertical">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/circle_background">
+                                    android:layout_margin="7dp">
 
                                     <ImageView
                                         android:id="@+id/imageView7"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/wallet" />
+                                        app:srcCompat="@drawable/ic_platform" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 <TextView
@@ -119,37 +127,38 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="0dp"
                                     android:layout_weight="1"
-                                    android:text="Shop"
+                                    android:text="Platforms"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textStyle="bold" />
+                                     />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/grey_background"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="8dp"
+                                android:onClick="pindahAbout"
                                 android:elevation="5dp"
+
                                 android:orientation="vertical">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/circle_background">
+                                    android:layout_margin="7dp">
 
                                     <ImageView
                                         android:id="@+id/imageView3"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/wallet" />
+                                        app:srcCompat="@drawable/ic_about" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 <TextView
@@ -158,37 +167,36 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="0dp"
                                     android:layout_weight="1"
-                                    android:text="Shop"
+                                    android:text="About Us"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textStyle="bold" />
+                                     />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/grey_background"
-                                android:elevation="5dp"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="8dp"
+                                android:onClick="pindahTeamMenu"
                                 android:orientation="vertical">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/circle_background">
+                                    android:layout_margin="7dp">
 
                                     <ImageView
                                         android:id="@+id/imageView4"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/wallet" />
+                                        app:srcCompat="@drawable/ic_team" />
 
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -198,27 +206,25 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="0dp"
                                     android:layout_weight="1"
-                                    android:text="Test"
+                                    android:text="Team"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textStyle="bold" />
+                                     />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/grey_background"
-                                android:elevation="5dp"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="8dp"                                android:elevation="5dp"
                                 android:orientation="vertical">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/circle_background">
+                                    android:layout_margin="7dp">
 
                                     <ImageView
                                         android:id="@+id/imageView5"
@@ -228,7 +234,7 @@
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/wallet" />
+                                        app:srcCompat="@drawable/ic_contact" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 <TextView
@@ -237,37 +243,35 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="0dp"
                                     android:layout_weight="1"
-                                    android:text="Shop"
+                                    android:text="Contact"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textStyle="bold" />
+                                    />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/grey_background"
-                                android:elevation="5dp"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="8dp"                                android:elevation="5dp"
                                 android:orientation="vertical">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/circle_background">
+                                    android:layout_margin="7dp">
 
                                     <ImageView
                                         android:id="@+id/imageView9"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:srcCompat="@drawable/wallet" />
+                                        app:srcCompat="@drawable/ic_partner" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 <TextView
@@ -276,10 +280,10 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="0dp"
                                     android:layout_weight="1"
-                                    android:text="Shop"
+                                    android:text="Partners"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textStyle="bold" />
+                                    />
 
                             </LinearLayout>
 
@@ -437,40 +441,35 @@
                         android:id="@+id/constraintLayout5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/white_background2"
-                        android:elevation="5dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
+                        <TextView
                             android:id="@+id/tv_aboutus"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="ABOUT BULLION ECOSYSTEM"
-                                android:textColor="#2e74b2"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="24dp"
+                            android:text="ABOUT BULLION ECOSYSTEM"
+                            android:textColor="#2e74b2"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent" />
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="160dp"
+                            android:layout_height="118dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_marginBottom="8dp"
                             android:background="@drawable/white_background"
-                            android:elevation="5dp"
+                            android:elevation="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/tv_aboutus">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -478,13 +477,14 @@
                                 android:layout_width="180dp"
                                 android:layout_height="105dp"
                                 android:layout_marginStart="8dp"
-                                app:layout_constraintStart_toStartOf="parent">
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
 
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="170dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
                                     android:text="Bullion Ecosystem sebagai penyedia Teknologi Ekosistem Terintegrasi, membangun sistem pengelolaan investasi yang semakin baik, transparan, terpisah dan dapat terintegrasi dengan sistem terstruktur yang dapat......"
                                     android:textColor="#000000"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -493,10 +493,11 @@
 
                             <ImageView
                                 android:id="@+id/imageView13"
-                                android:layout_width="130dp"
-                                android:layout_height="130dp"
+                                android:layout_width="105dp"
+                                android:layout_height="105dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/about_us" />
@@ -506,14 +507,10 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout8"
                         android:layout_width="match_parent"
                         android:layout_height="240dp"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/white_background"
-                        android:elevation="10dp"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
 
@@ -521,7 +518,9 @@
                             android:id="@+id/constraintLayout7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center">
+                            android:layout_marginStart="25dp"
+                            android:gravity="center"
+                            app:layout_constraintStart_toStartOf="parent">
 
                             <TextView
                                 android:id="@+id/textView2"
@@ -529,19 +528,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"
-                                android:text="Team"
+                                android:text="Meet The Team"
                                 android:textColor="#2e74b2"
                                 android:textSize="24sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                android:textStyle="bold" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <LinearLayout
                             android:id="@+id/linearLayout2"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:layout_marginTop="17dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
@@ -560,13 +557,14 @@
                                     android:layout_height="110dp"
                                     tools:layout_editor_absoluteY="3dp">
 
-                                    <ImageView
+                                    <com.google.android.material.imageview.ShapeableImageView
                                         android:id="@+id/imageView6"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:srcCompat="@drawable/profil_cowo"
                                         tools:layout_editor_absoluteX="0dp"
-                                        tools:layout_editor_absoluteY="0dp" />
+                                        tools:layout_editor_absoluteY="0dp"
+                                        app:shapeAppearanceOverlay="@style/circle_image"/>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -674,11 +672,10 @@
                             android:layout_height="30dp"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/blue_background"
+                            android:onClick="pindahTeamMenu"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-                            android:onClick="pindahTeamMenu"
-                            >
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
                             <TextView
                                 android:id="@+id/textView10"

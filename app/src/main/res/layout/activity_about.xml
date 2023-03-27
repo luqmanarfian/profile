@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Activity_about">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2E74B2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:onClick="backHome"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/textView13"
+                android:layout_width="23dp"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/ic_back"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="About Us"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/header_about_us"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="70dp"
+                android:text="TO TRANSFORMS THE ECOSYSTEM, TO MAKE THE ECOSYSTEM BETTER"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/white_radiustop"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subheade_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="SOLUTION WE CREATE"
+                    android:textColor="#2E74B2"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/layout_head">
+
+            <TextView
+                android:id="@+id/tv_subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subheade_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="14dp"
+                android:text="Investment Problems :"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:text="\t\tAda beberapa instrumen investasi safe-haven  (aset bernilai yang aman) di dunia, salah satunya adalah logam mulia. fisik emas adalah yang paling populer dan paling likuid dan nilainya selalu mengatasi tingkat inflasi seiring dengan penurunan nilai mata uang di dunia.
+\n
+\n
+\t\tNamun di sisi lain, fisik emas telah menjadi komoditas yang digunakan oleh para kriminal untuk melakukan penipuan, pemalsuan, dan penawaran investasi yang pada akhirnya hanya ilusi karena dikelola dalam sistem yang buruk, diantaranya  memakai skema piramida dan skema Ponzi. Di samping itu, tidak ada sistem akun terpisah untuk dana dan aset klien."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Investment Solutions :"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:text="\t\tKeterbatasan fisik emas sebagai aset yang sangat populer di masyarakat, sangat likuid tetapi terbatas pada proses jual beli, serta tidak terhubung langsung dengan mekanisme transaksi belanja, pembayaran, pengiriman uang, perbankan dan utilitas; maka kami telah mengembangkan teknologi terintegrasi yang dapat menghubungkan sistem perdagangan fisik emas dalam ekosistem pertukaran secara langsung dengan sistem perbankan, sistem pengiriman uang, sistem pembayaran, sistem belanja, dan sistem utilitas.
+\n
+\n
+\t\tDengan konektivitas ini, fisik emas yang saat ini hanya menjadi instrumen investasi akan mampu dikonversi dan dapat digunakan sebagai media pembayaran tunai.
+\n
+\n
+\n
+\t\tSelain akses secara  langsung ke berbagai sistem transaksi, Bullion Ecosystem juga telah mengembangkan sistem fungsi kustodian yang dapat berinteraksi langsung dengan sistem perdagangan di bursa komoditi, yaitu fungsi kustodian dana klien di Bank serta fungsi kustodian untuk aset fisik peserta perdagangan yaitu  aset fisik emas di fasilitas vault tempat penyimpanan emas.
+\n
+\n
+\t\tSelain itu, kami juga telah mengembangkan fungsi kustodian dalam hal data transaksi dan data individu untuk setiap klien yang dapat digunakan sebagai referensi untuk perkembangan ekonomi makro suatu negara.
+\n
+\n
+\n
+\t\tPlatform perdagangan kami terhubung ke aplikasi seluler dengan fitur yang menjembatani ekosistem perdagangan dengan ekosistem utilitas dan aktivitas keuangan termasuk jaringan Visa dan Mastercard yang dibutuhkan oleh klien kami sebagai pengguna aplikasi.
+\n
+\n
+\t\tKontrak perdagangan di ekosistem kami dapat dimulai dari jumlah transaksi yang sangat rendah yaitu 0,01 gram. Dapat diimulai dengan nilai transaksi nominal yang rendah tetapi mendapatkan akses yang inklusif ke dalam layanan keuangan global merupakan  keunggulan dari ekosistem kami.
+
+"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
